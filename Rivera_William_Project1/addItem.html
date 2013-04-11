@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <!--Project 1
+        William Rivera
+        MiU 1304-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Our MiU Project." />
+        <meta name="keywords" content="html5, Kids, Ministry" />
+        <meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kids Zone</title>
+	<link href="css/styles.css" rel="stylesheet" />
+   </head>
+    <body>
+        <header><h1 id="titleMin">Kids Zone</h1></header>
+        <nav>
+            <a href="#" id="clear">Clear Store Data</a>
+            <a href="#" id="displayLink">Display Data</a>
+            <a href="addItem.html" id="addNew" style="display:none;">Add New Member</a>
+        </nav>
+        <form action="#" method="post" id="memForm">
+            <fieldset id="memberFieldset">
+                <legend>Add a New Kid</legend>
+                <span>* fields are required.</span>
+                <ul id="errors"></ul>
+                <ul id="questions">
+                    <li id="select"><label for="grade">*Select School Grade:</label><br /></li>
+                    <li><label for="fname">*First Name: </label><input type="text" id="fname" /></li>
+                    <li><label for="lname">*Last Name: </label><input type="text" id="lname"/></li>
+                    <li><label for="email">*Email: </label><input type="email" id="email" placeholder="abcd@abc.com"</li>
+                    <li><label for="gender">Gender: </label>
+                        <ul class="checkbox">
+                            <li><input type="radio" id="male" value="Male" name="gender"/><label for="male">Male</label></li>
+                            <li><input type="radio" id="female" value="Female" name="gender"/><label for="female">Female</label></li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" id="fav" value="Yes" class="checkbox" /><label for="fav">Any alergies?</label></li>
+                    <li><label for="NV">Number of Visits</label><input type="range" min="1" max="4" id="nv" /></li>
+                    <li><label for="date">Date of Birth</label><input type="date" id="date" /></li>
+                    <li><label for="comments">Comments: </label><textarea id="notes"></textarea></li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="Save Member" id="submit" /><br />
+        </form>
+	<script src="js/json.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
