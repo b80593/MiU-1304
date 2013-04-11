@@ -1,6 +1,6 @@
-/* Project 2
+/* Project 1
         William Rivera
-        MiU 1303
+        MiU 1304
 */
 
 var json = {

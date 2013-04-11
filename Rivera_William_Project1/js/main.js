@@ -1,5 +1,5 @@
-//MiU 1303
-//Project 2
+//MiU 1304
+//Project 1
 //William Rivera
 
 //Wait until the DOM is ready.
